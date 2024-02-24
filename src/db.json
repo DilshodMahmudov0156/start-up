@@ -1,13 +1,91 @@
 {
   "data": [
     {
+      "id": 1,
+      "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F44f5c47f-7ddb-43e2-afc7-8391a10edbdf.jpg&w=1920&q=100",
       "companyName": "",
       "userId": "",
       "type": "product",
-      "id": 0,
-      "title": "",
-      "discription": "",
-      "price": "",
+      "title": "Qazi pitsa",
+      "discription": "something",
+      "price": 63,
+      "quantity": 0
+    },
+    {
+      "id": 2,
+      "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2Fc14e362c-57a5-49fd-9a80-b14ce099b777.jpg&w=1920&q=100",
+      "companyName": "",
+      "userId": "",
+      "type": "product",
+      "title": "Go'sht mix",
+      "discription": "something",
+      "price": 92,
+      "quantity": 0
+    },
+    {
+      "id": 3,
+      "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F45bd4064-2430-4250-899d-d6f834d36c30.jpg&w=1920&q=100 ",
+      "companyName": "",
+      "userId": "",
+      "type": "product",
+      "title": "Chicken karri",
+      "discription": "something",
+      "price": 57,
+      "quantity": 0
+    },
+    {
+      "id": 4,
+      "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F84e3a554-551a-45f6-9ac1-9c7870aa6f14.jpg&w=1920&q=100",
+      "companyName": "",
+      "userId": "",
+      "type": "product",
+      "title": "Halapeno",
+      "discription": "something",
+      "price": 53,
+      "quantity": 0
+    },
+    {
+      "id": 5,
+      "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F07b2af79-95e0-48ae-8962-3b29fdfcb6d4.jpg&w=1920&q=100",
+      "companyName": "",
+      "userId": "",
+      "type": "product",
+      "title": "Meksikancha",
+      "discription": "something",
+      "price": 57,
+      "quantity": 0
+    },
+    {
+      "id": 6,
+      "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2Fd356188d-b9b4-4c06-9251-4429a17adfd5.jpg&w=1920&q=100",
+      "companyName": "",
+      "userId": "",
+      "type": "product",
+      "title": "Margarita",
+      "discription": "something",
+      "price": 42,
+      "quantity": 0
+    },
+    {
+      "id": 7,
+      "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F18dcffd2-c192-4811-8698-68c8a51cdb34.jpg&w=1920&q=100",
+      "companyName": "",
+      "userId": "",
+      "type": "product",
+      "title": "Barbekyu tovuq",
+      "discription": "something",
+      "price": 53,
+      "quantity": 0
+    },
+    {
+      "id": 8,
+      "url": "https://bellissimo.uz/_next/image?url=https%3A%2F%2Fio.bellissimo.uz%2Fimages%2F15f8411b-947d-405b-9c78-016711ba8da1.jpg&w=1920&q=100",
+      "companyName": "",
+      "userId": "",
+      "type": "product",
+      "title": "Tovuq va qo'ziqorinlar",
+      "discription": "something",
+      "price": 47 ,
       "quantity": 0
     }
   ],

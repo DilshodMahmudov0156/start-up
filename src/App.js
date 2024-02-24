@@ -13,7 +13,7 @@ function App() {
     const [ data, setData ] = useState([]);
     useEffect(() => {
         const gettingData = () => {
-            setData(asyncData.secondData);
+            setData(asyncData.data);
         }
         return () => {gettingData()}
     }, [])
@@ -25,11 +25,8 @@ function App() {
     <div className="app">
         <NavBar/>
       <Body/>
-
-
-
-
-        <button onClick={() => {dispatch({ type: "ON_LOG", payload: null, })}}>click to get data</button>
+        {/*<button onClick={() => {dispatch({ type: "ON_LOG", payload: null, })}}>click to get data</button>*/}
+        <button onClick={dater}>click to get data</button>
     </div>
   );
 }
