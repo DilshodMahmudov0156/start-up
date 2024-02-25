@@ -5,6 +5,7 @@ import {useContext, useEffect, useState} from "react";
 import NavBar from "./components/navBar";
 import {Context} from "./context";
 import Cart from "./components/cart";
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 
 function App() {
 
@@ -40,13 +41,15 @@ function App() {
     }
 
   return (
-    <div className="app">
-        <NavBar/>
-      <Body data={data} addToCart={addToCart}/>
-        {/*<button onClick={() => {dispatch({ type: "ON_LOG", payload: null, })}}>click to get data</button>*/}
-        <button onClick={dater}>click to get data</button>
-        <Cart cart={cart}/>
-    </div>
+      <div className="app">
+          <Router>
+              <NavBar/>
+              <Routes>
+                  <Route path="/" element={<Body data={data} addToCart={addToCart}/>}/>
+                  <Route path="/cart" element={<Cart cart={cart}/>}/>
+              </Routes>
+          </Router>
+      </div>
   );
 }
 
