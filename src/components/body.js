@@ -1,10 +1,10 @@
 import React from 'react';
 import Section from "./section";
 
-function Body() {
+function Body({data, addToCart}) {
     return (
         <div>
-            <Section/>
+            <Section data={data} addToCart={addToCart}/>
         </div>
     );
 }
