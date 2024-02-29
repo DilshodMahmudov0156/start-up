@@ -1,32 +1,45 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function NavBar() {
     return (
 
-        <nav className="navbar navbar-expand-lg bg-body-tertiary shadow-sm">
-            <div className="container-fluid">
-                <a className="navbar-brand" href="#">Navbar</a>
 
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <Link className="nav-link active" to="/">Home</Link>
-                    </ul>
+        <nav>
+            <h1 id="h1">Dastafka <span>24/7</span></h1>
 
-                    <Link to="/cart">
-                        <button type="button" className="btn btn-success mx-3">
-                            <i className="bi bi-bag"></i>
-                            <span className="badge mx-1 text-bg-danger">
-                        </span>
-                        </button>
-                    </Link>
-                </div>
-            </div>
+            <input type="checkbox" id="check" />
+
+                <label htmlFor="check">
+                    <i className='bx bx-menu' id="btn"></i>
+                    <i className='bx bx-x' id="cancel"></i>
+                </label>
+
+                <Link to="/cart"><i id="cart2" className='bx bx-cart'></i></Link>
+
+                <ul>
+                    <li><Link to="/">Asosiy</Link>
+                        <div className="line"></div>
+                    </li>
+                    <li>
+                        <Link to="/kafelar">Kafelar</Link>
+                        <div className="line"></div>
+                    </li>
+                    <li>
+                        <Link to="/cart">Savat</Link>
+                        <div className="line"></div>
+                    </li>
+                    <li>
+                        <Link to="/">Aloqa</Link>
+                        <div className="line"></div>
+                    </li>
+                </ul>
+
+
+                <Link to="/cart">
+                    <i id="cart" className='bx bx-cart'></i>
+                </Link>
+                <i id="cart" className='bx bx-search-alt'></i>
         </nav>
 
     );
