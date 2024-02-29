@@ -9,7 +9,7 @@
       "title": "Qazi pitsa",
       "discription": "something",
       "price": 63,
-      "quantity": 0
+      "quantity": 1
     },
     {
       "id": 2,
@@ -20,7 +20,7 @@
       "title": "Go'sht mix",
       "discription": "something",
       "price": 92,
-      "quantity": 0
+      "quantity": 1
     },
     {
       "id": 3,
@@ -31,7 +31,7 @@
       "title": "Chicken karri",
       "discription": "something",
       "price": 57,
-      "quantity": 0
+      "quantity": 1
     },
     {
       "id": 4,
@@ -42,7 +42,7 @@
       "title": "Halapeno",
       "discription": "something",
       "price": 53,
-      "quantity": 0
+      "quantity": 1
     },
     {
       "id": 5,
@@ -53,7 +53,7 @@
       "title": "Meksikancha",
       "discription": "something",
       "price": 57,
-      "quantity": 0
+      "quantity": 1
     },
     {
       "id": 6,
@@ -64,7 +64,7 @@
       "title": "Margarita",
       "discription": "something",
       "price": 42,
-      "quantity": 0
+      "quantity": 1
     },
     {
       "id": 7,
@@ -75,7 +75,7 @@
       "title": "Barbekyu tovuq",
       "discription": "something",
       "price": 53,
-      "quantity": 0
+      "quantity": 1
     },
     {
       "id": 8,
@@ -86,7 +86,7 @@
       "title": "Tovuq va qo'ziqorinlar",
       "discription": "something",
       "price": 47 ,
-      "quantity": 0
+      "quantity": 1
     }
   ],
   "secondData": [

@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from "react-router-dom";
 import NavBar from "./navBar";
 
-function Cart({cart}) {
+function Cart({cart, changeQuantity, dater}) {
 
 
     return (
@@ -29,9 +29,9 @@ function Cart({cart}) {
                                             </td>
                                             <td>
                                                 <div className="d-flex align-items-center my-4">
-                                                    <button className="btn btn-warning">-</button>
+                                                    <button className="btn btn-warning" onClick={() => {dater(item, "+")}}>-</button>
                                                     <span className="mx-3">{item.quantity}</span>
-                                                    <button className="btn btn-warning">+</button>
+                                                    <button className="btn btn-warning" onClick={() => {changeQuantity(item, "+")}}>+</button>
                                                 </div>
 
                                             </td>
@@ -49,6 +49,9 @@ function Cart({cart}) {
                             }
                             </tbody>
                         </table>
+                        <button className="btn btn-primary" onClick={dater}>
+                            click to get data
+                        </button>
                     </div>
                 </div>
             </div>

@@ -36,17 +36,25 @@ function App() {
         console.log(index);
     }
 
-    const cangeQuantity = (item, sign) => {
+    const changeQuantity = (item, sign) => {
         const productList = [...cart];
         const index = productList.indexOf(item);
         if (sign === "+"){
-
+            productList[index].quantity++;
+        }else{
+            if(productList[index].quality > 1){
+                productList[index].quantity--;
+            }else {
+                productList.splice(index, 1);
+            }
         }
+        localStorage.setItem("cart", JSON.stringify(productList));
+        setCart(productList);
     }
 
 
-    const dater = () => {
-        console.log(data);
+    const dater = (item) => {
+
     }
 
   return (
@@ -54,7 +62,7 @@ function App() {
           <Router>
               <Routes>
                   <Route path="/" element={<Body data={data} addToCart={addToCart}/>}/>
-                  <Route path="/cart" element={<Cart cart={cart}/>}/>
+                  <Route path="/cart" element={<Cart cart={cart} changeQuantity={changeQuantity} dater={dater}/>}/>
               </Routes>
           </Router>
       </div>
