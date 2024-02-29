@@ -41,13 +41,23 @@ function App() {
         const index = productList.indexOf(item);
         if (sign === "+"){
             productList[index].quantity++;
-        }else{
-            if(productList[index].quality > 1){
+        }else if(sign === "-" && productList[index].quantity > 1){
                 productList[index].quantity--;
-            }else {
-                productList.splice(index, 1);
-            }
+                if (productList[index].quantity === 0) {
+                    productList[index].quantity = 1;
+                }
+
         }
+        localStorage.setItem("cart", JSON.stringify(productList));
+        setCart(productList);
+    }
+
+    const deleteProduct = (item) => {
+        const productList = [...cart];
+        const index = productList.indexOf(item);
+
+        productList.splice(index, 1);
+
         localStorage.setItem("cart", JSON.stringify(productList));
         setCart(productList);
     }
@@ -61,8 +71,8 @@ function App() {
       <div className="app">
           <Router>
               <Routes>
-                  <Route path="/" element={<Body data={data} addToCart={addToCart}/>}/>
-                  <Route path="/cart" element={<Cart cart={cart} changeQuantity={changeQuantity} dater={dater}/>}/>
+                  <Route path="/" element={<Body data={data} addToCart={addToCart} cartLength={cart.length}/>}/>
+                  <Route path="/cart" element={<Cart cart={cart} changeQuantity={changeQuantity} deleteProduct={deleteProduct}/>}/>
               </Routes>
           </Router>
       </div>

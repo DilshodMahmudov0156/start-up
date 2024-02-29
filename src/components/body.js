@@ -3,10 +3,10 @@ import Section from "./section";
 import Header from "../parts/header";
 import NavBar from "./navBar";
 
-function Body({data, addToCart}) {
+function Body({data, addToCart, cartLength}) {
     return (
         <div>
-            <NavBar/>
+            <NavBar cartLength={cartLength}/>
             <br/><br/><br/><br/><br/>
             <Header/>
             <Section data={data} addToCart={addToCart}/>

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-function NavBar() {
+function NavBar({cartLength}) {
     return (
 
 
@@ -36,8 +36,12 @@ function NavBar() {
                 </ul>
 
 
-                <Link to="/cart">
+                <Link to="/cart" className="cart-link">
                     <i id="cart" className='bx bx-cart'></i>
+                    {
+                        cartLength? <span className="cart-length text-center">{cartLength}</span>: ""
+                    }
+
                 </Link>
                 <i id="cart" className='bx bx-search-alt'></i>
         </nav>

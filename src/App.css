@@ -10,6 +10,19 @@
     width: 150px;
     height: auto;
 }
+.cart-length{
+    color: white;
+    text-decoration: none;
+    display: block;
+    background: red;
+    border-radius: 12px;
+    min-width: 25px;
+    height: 25px;
+}
+.cart-link{
+    text-decoration: none;
+    display: flex;
+}
 
 *{
     font-family: cursive;
