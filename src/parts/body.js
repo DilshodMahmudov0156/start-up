@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from "./section";
-import Header from "../parts/header";
-import NavBar from "./navBar";
+import Header from "./header";
+import NavBar from "../components/navBar";
 
 function Body({data, addToCart, cartLength}) {
     return (

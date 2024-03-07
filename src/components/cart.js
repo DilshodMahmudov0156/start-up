@@ -1,8 +1,20 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link} from "react-router-dom";
 import NavBar from "./navBar";
 
 function Cart({cart, changeQuantity, deleteProduct}) {
+
+    const [totalSum, setTotalsum] = useState();
+
+
+    useEffect(() => { /**JAMI SUMMANI HISOBLASH UCUN */
+    let total = 0;
+        for(var i = 0; i < cart.length; i++) {
+            total+= cart[i].price*cart[i].quantity;
+        }
+        setTotalsum(total);
+    }, [cart]);
+
 
 
     return (
@@ -10,6 +22,7 @@ function Cart({cart, changeQuantity, deleteProduct}) {
             <div className="container mt-5">
                 <div className="row justify-content-center">
                     <h3 className="text-center text-light">Sizning savatingiz!</h3>
+                    <h4 className="text-center text-success">sizdan {totalSum} 000 so'm</h4>
                     <Link to="/" className="text-light">
                         Asosiy
                         <i className="bi bi-house-fill"></i>
@@ -37,7 +50,7 @@ function Cart({cart, changeQuantity, deleteProduct}) {
                                         <td>
                                             <div className="d-flex align-items-center my-4">
                                                 <button className="btn btn-warning" onClick={() => {changeQuantity(item, "-")}}>-</button>
-                                                <span className="mx-3">{item.quantity-1}</span>
+                                                <span className="mx-3">{item.quantity}</span>
                                                 <button className="btn btn-warning" onClick={() => {changeQuantity(item, "+")}}>+</button>
                                             </div>
                                         </td>

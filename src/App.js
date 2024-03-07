@@ -1,5 +1,5 @@
 import './App.css';
-import Body from "./components/body";
+import Body from "./parts/body";
 import asyncData from "./db.json";
 import {useContext, useEffect, useState} from "react";
 import NavBar from "./components/navBar";
@@ -19,6 +19,10 @@ function App() {
             setData(asyncData.data);
             if(JSON.parse(localStorage.getItem('cart'))){
                 setCart(JSON.parse(localStorage.getItem('cart')))
+            }
+            if(cart.length = 0){
+                setCart(null);
+                localStorage.clear();
             }
         }
         return () => {gettingData()}
