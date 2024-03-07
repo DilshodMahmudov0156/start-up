@@ -91,9 +91,41 @@
   ],
   "cafes": [
     {
-      "id": "",
-      "name": "King Burger"
-
+      "id": "kingburger",
+      "url": "./imgs/1.jpg",
+      "name": "King Burger kafe"
+    },{
+      "id": "smile",
+      "url": "./imgs/2.jpg",
+      "name": "Smile kafe"
+    },{
+      "id": "almaz",
+      "url": "./imgs/3.jpg",
+      "name": "Almaz kafe"
+    },{
+      "id": "karamel",
+      "url": "./imgs/4.jpg",
+      "name": "Karamel kafe"
+    },{
+      "id": "555",
+      "url": "./imgs/5.jpg",
+      "name": "555 kafe"
+    },{
+      "id": "bigjoy",
+      "url": "./imgs/6.jpg",
+      "name": "Big Joy kafe"
+    },{
+      "id": "makkon",
+      "url": "./imgs/7.jpg",
+      "name": "Makkon kafe"
+    },{
+      "id": "yoshlik",
+      "url": "./imgs/8.jpg",
+      "name": "Yoshlik kafe"
+    },{
+      "id": "rohat",
+      "url": "./imgs/9.jpg",
+      "name": "Rohat kafe"
     }
   ],
   "secondData": [

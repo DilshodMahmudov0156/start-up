@@ -1,6 +1,17 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import data from "../db.json";
+import CafeElement from "../components/cafeElement";
+import { Link } from "react-router-dom";
+import pomidor from "../imgs/pamidor3.png"
 
-function Section({ data }) {
+function Section({}) {
+
+    const [myData, setMydata] = useState([]);
+
+    useEffect(() => {
+        setMydata(data.cafes);
+    },[]);
+
     return (
         <>
             <div className="box-line mt-5">
@@ -24,7 +35,7 @@ function Section({ data }) {
             </svg>
 
             <div className="pamidor3">
-                <img src="img/pamidor 3.png" alt="" />
+                <img src={pomidor} alt="" />
             </div>
 
             <div className="title" id="kafelar">
@@ -32,13 +43,15 @@ function Section({ data }) {
             </div>
 
             <div className="foods">
-                {data.map((item) => (
-                    <div className="foods-one">
-                        <img src={item.url} alt=""/>
-                        <h2>King Burger kafe</h2>
-                    </div>
-                ))}
+                {
+                    myData.map((item) => (
+                        <Link to={`/${item.id}`} className="my-link">
+                            <CafeElement id={item.id} url={item.url} name={item.name}/>
+                        </Link>
+                    ))
+                }
             </div>
+
         </>
     );
 }

@@ -75,7 +75,7 @@ function App() {
       <div className="app">
           <Router>
               <Routes>
-                  <Route path="/" element={<Body data={data} cartLength={cart.length}/>}/>
+                  <Route path="/" element={<Body cartLength={cart.length}/>}/>
                   <Route path="/cart" element={<Cart cart={cart} changeQuantity={changeQuantity} deleteProduct={deleteProduct}/>}/>
               </Routes>
           </Router>

@@ -27,6 +27,9 @@
     width: 100px;
     background-color: red;
 }
+.my-link{
+    text-decoration: none;
+}
 
 *{
     font-family: cursive;
