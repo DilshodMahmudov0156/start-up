@@ -21,12 +21,12 @@ function Cart({cart, changeQuantity, deleteProduct}) {
         <div className="cart-app">
             <div className="container mt-5">
                 <div className="row justify-content-center">
-                    <h3 className="text-center text-light">Sizning savatingiz!</h3>
-                    <h4 className="text-center text-success">sizdan {totalSum} 000 so'm</h4>
-                    <Link to="/" className="text-light">
+                    <Link to="/" className="text-light text-center">
                         Asosiy
                         <i className="bi bi-house-fill"></i>
                     </Link>
+                    <h3 className="text-center text-light mt-5">Sizning savatingiz!</h3>
+                    <h4 className="text-center text-success">sizdan {totalSum} 000 so'm</h4>
                     <div className="col-xl-8 col-md-10 col-sm-10">
                         <table className="table table-striped table-dark table-hover mt-5">
                             <tbody>

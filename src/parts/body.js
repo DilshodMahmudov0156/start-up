@@ -3,13 +3,13 @@ import Section from "./section";
 import Header from "./header";
 import NavBar from "../components/navBar";
 
-function Body({data, addToCart, cartLength}) {
+function Body({data, cartLength}) {
     return (
         <div>
             <NavBar cartLength={cartLength}/>
             <br/><br/><br/><br/><br/>
             <Header/>
-            <Section data={data} addToCart={addToCart}/>
+            <Section data={data}/>
         </div>
     );
 }
